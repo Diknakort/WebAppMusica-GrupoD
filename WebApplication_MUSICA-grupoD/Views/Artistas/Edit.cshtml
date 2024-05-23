@@ -1,0 +1,49 @@
+﻿@model WebApplication_MUSICA_grupoD.Models.Artistas
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Artistas</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="Nombre_Real" class="control-label"></label>
+                <input asp-for="Nombre_Real" class="form-control" />
+                <span asp-validation-for="Nombre_Real" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Nombre_Artistico" class="control-label"></label>
+                <input asp-for="Nombre_Artistico" class="form-control" />
+                <span asp-validation-for="Nombre_Artistico" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Fecha_Nacimiento" class="control-label"></label>
+                <input asp-for="Fecha_Nacimiento" class="form-control" />
+                <span asp-validation-for="Fecha_Nacimiento" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="RolPrincipal" class="control-label"></label>
+                <select asp-for="RolPrincipal" class="form-control" asp-items="ViewBag.RolPrincipal"></select>
+                <span asp-validation-for="RolPrincipal" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
