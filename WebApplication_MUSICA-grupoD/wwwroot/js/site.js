@@ -16,3 +16,12 @@ function comparer(index) {
     }
 }
 function getCellValue(row, index) { return $(row).children('td').eq(index).text() }
+
+$(document).ready(function () {
+    $("#search").on("keyup", function () {
+        var value = $(this).val().toLowerCase();
+        $("#tablaCuerpo tr").filter(function () {
+            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+        });
+    });
+});
