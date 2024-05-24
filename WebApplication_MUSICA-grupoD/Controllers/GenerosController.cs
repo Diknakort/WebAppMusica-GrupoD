@@ -53,7 +53,7 @@ namespace WebApplication_MUSICA_grupoD.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Nombre")] Generos generos)
+        public async Task<IActionResult> Create([Bind("id,Nombre")] Generos generos)
         {
             if (ModelState.IsValid)
             {

@@ -9,7 +9,7 @@ public partial class Conciertos { }
 public partial class ConciertosMetadata
 {
     public int Id { get; set; }
-
+    [DataType(DataType.Currency)]
     public decimal? Precio { get; set; }
     [DataType(DataType.Date)]
     public DateTime? FechaHora { get; set; }

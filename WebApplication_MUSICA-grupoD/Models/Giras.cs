@@ -15,5 +15,3 @@ public partial class Giras
 
     public virtual ICollection<Conciertos> Conciertos { get; set; } = new List<Conciertos>();
 }
-
-

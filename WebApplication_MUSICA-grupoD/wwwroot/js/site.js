@@ -2,6 +2,11 @@
 // for details on configuring this project to bundle and minify static web assets.
 
 // Write your JavaScript code.
+
+
+// script.js
+
+
 $('th').click(function () {
     var table = $(this).parents('table').eq(0)
     var rows = table.find('tr:gt(0)').toArray().sort(comparer($(this).index()))
@@ -15,6 +20,8 @@ function comparer(index) {
         return $.isNumeric(valA) && $.isNumeric(valB) ? valA - valB : valA.toString().localeCompare(valB)
     }
 }
+
+
 function getCellValue(row, index) { return $(row).children('td').eq(index).text() }
 
 $(document).ready(function () {
@@ -25,3 +32,4 @@ $(document).ready(function () {
         });
     });
 });
+

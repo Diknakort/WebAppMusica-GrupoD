@@ -47,7 +47,7 @@ namespace WebApplication_MUSICA_grupoD.Controllers
         // GET: Canciones/Create
         public IActionResult Create()
         {
-            ViewData["DiscosID"] = new SelectList(_context.Discos, "Id", "Id");
+            ViewData["DiscosID"] = new SelectList(_context.Discos, "Id", "Nombre");
             return View();
         }
 
@@ -64,7 +64,7 @@ namespace WebApplication_MUSICA_grupoD.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["DiscosID"] = new SelectList(_context.Discos, "Id", "Id", canciones.DiscosID);
+            ViewData["DiscosID"] = new SelectList(_context.Discos, "Id", "Nombre", canciones.DiscosID);
             return View(canciones);
         }
 

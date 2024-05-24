@@ -106,7 +106,6 @@ public partial class GrupoDContext : DbContext
 
         modelBuilder.Entity<Generos>(entity =>
         {
-            entity.Property(e => e.Id).ValueGeneratedNever();
             entity.Property(e => e.Nombre)
                 .HasMaxLength(50)
                 .IsUnicode(false);
