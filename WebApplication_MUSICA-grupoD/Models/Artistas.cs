@@ -7,12 +7,9 @@ namespace WebApplication_MUSICA_grupoD.Models;
 public partial class Artistas
 {
     public int Id { get; set; }
-    [DisplayName("Nombre que le puso su madre")]
     public string? Nombre_Real { get; set; }
-    [DisplayName("Como se le conoce")]
     public string? Nombre_Artistico { get; set; }
-    [DisplayName("Fecha de nacimiento")]
-    [DataType(DataType.Date)]
+
     public DateOnly? Fecha_Nacimiento { get; set; }
   
     

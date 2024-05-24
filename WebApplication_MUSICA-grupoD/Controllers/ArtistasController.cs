@@ -4,8 +4,10 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 using WebApplication_MUSICA_grupoD.Models;
+
 
 namespace WebApplication_MUSICA_grupoD.Controllers
 {
@@ -23,6 +25,7 @@ namespace WebApplication_MUSICA_grupoD.Controllers
         {
             var grupoDContext = _context.Artistas.Include(a => a.RolPrincipalNavigation);
             return View(await grupoDContext.ToListAsync());
+
         }
 
         // GET: Artistas/Details/5
