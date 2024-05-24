@@ -1,7 +1,491 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
+<header>
+    <div class="contenedor-carrusel d-flex d-sm-block d-md-none d-lg-none d-xl-none">
+        <div id="carouselExampleCaptions" class="carousel slide contenedor-imagenes d-md-none d-lg-none d-sm-block" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner comedido d-block">
+                <div class="carousel-item active d-block">
+                    <img src="img/musica/concierto-lluvia.jpg" class="d-block comedido" alt="">
+                    <div class="carousel-caption d-block float-left">
+                        <h5>Concierto de abril 2023</h5>
+                        <p>En Teruel con 3.000 personas al aire libre mientras el cielo se acercaba a escucharnos.</p>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <img src="img/musica/macro-concierto.jpg" class="d-block w-100 comedido" alt="">
+                    <div class="carousel-caption float-left d-block">
+                        <h5>Concierto en Monzalbarba Festival</h5>
+                        <p>El más grande entre los grandes, no podemos estar más orgullosos de tocar ante semejante público.</p>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <img src="img/musica/fondo-guitarra-fuego.jpg" class="d-block comedido" alt="...">
+                    <div class="carousel-caption float-left d-block">
+                        <h5>¿Vienes al próximo concierto?</h5>
+                        <p>Te esperamos con las manos y las carteras abiertas.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <div class="contenedor-carrusel d-none d-sm-none d-md-none d-lg-block d-xl-none ">
+        <div id="carouselExampleCaptions2" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/musica/concierto-lluvia.jpg" class="d-block w-100 comedido" height="400px" alt="">
+                    <div class="carousel-caption">
+                        <h5>Concierto de abril 2023</h5>
+                        <p>En Teruel con 3.000 personas al aire libre mientras el cielo se acercaba a escucharnos.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/musica/macro-concierto.jpg" class="w-100 comedido" height="400px" alt="">
+                    <div class="carousel-caption">
+                        <h5>Concierto en Monzalbarba Festival</h5>
+                        <p>El más grande entre los grandes, no podemos estar más orgullosos de tocar ante semejante público.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/musica/fondo-guitarra-fuego.jpg" class="w-100 comedido" height="400px" alt="...">
+                    <div class="carousel-caption">
+                        <h5>¿Vienes al próximo concierto?</h5>
+                        <p>Te esperamos con las manos y las carteras abiertas.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <div class="contenedor-carrusel d-none d-sm-none d-md-block d-lg-none d-xl-none ">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/musica/concierto-lluvia.jpg" class="d-block w-100 comedido" height="400px" alt="">
+                    <div class="carousel-caption">
+                        <h5>Concierto de abril 2023</h5>
+                        <p>En Teruel con 3.000 personas al aire libre mientras el cielo se acercaba a escucharnos.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/musica/macro-concierto.jpg" class="w-100 comedido" height="400px" alt="">
+                    <div class="carousel-caption">
+                        <h5>Concierto en Monzalbarba Festival</h5>
+                        <p>El más grande entre los grandes, no podemos estar más orgullosos de tocar ante semejante público.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/musica/fondo-guitarra-fuego.jpg" class="w-100 comedido" height="400px" alt="...">
+                    <div class="carousel-caption">
+                        <h5>¿Vienes al próximo concierto?</h5>
+                        <p>Te esperamos con las manos y las carteras abiertas.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+</header>
+<section>
+    <article class="container">
+        <div class="separador">
+            <hr />
+        </div>
+        <div class="container-fluid text-center row">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <h5 class="card-title">Último disco</h5>
+                        <img src="img/musica/Portada-disco (al-horno).jpg" alt="Disco Al Horno de Pimientos Rellenos" width="100%" />
+                        <p class="card-text">El último disco del grupo Pimientos Rellenos</p>
+                        <a href="#" class="btn btn-primary botonNaranja">Comprarlo ahora</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <h5 class="card-title">Ven al concierto</h5>
+                        <img src="img/musica/microfono-transparente (1).png" alt="Próximo concierto de Pimientos Rellenos" width="100%" />
+                        <p class="card-text">Próximo concierto programado: 10 de julio 2024</p>
+                        <a href="#" class="btn btn-primary botonNaranja">Compra tu entrada</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm-12">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <h5 class="card-title">Reproducir PlayList</h5>
+                        <audio src=""></audio>
+                        <img src="img/musica/spotity-playlist.png" alt="Escuchalo en Spotyfy" width="100%" />
+                        <p class="card-text">Puedes escuchar 'Al Horno' online</p>
+                        <audio controls class="botonNaranja ">
+                            <source src="/media/stomping-rock-four-shots-111444.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+</section>
+<div class="separador">
+    <hr />
+</div>
+<section class="fondo-gris">
+    <div class="row">
+        <h2 class="fondo-gris text-center">
+            Ven a nuestros conciertos
+        </h2>
+        <div class="col-lg-6 col-md-12 col-sm-12 text-center">
+            <div class="atras ">
+                <div class="SangriaIzquierda">
+                    <div class="separador">
+                        <p></p>
+                        <br />
+                    </div>
+                    <h3 class="text-lg-end margenDerecho"> 😄 Nuestros próximos bolos 😄</h3>
+                    <div class="separador">
+                        <hr /><br />
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <p></p>
+                        </div>
+                        <div class="col ">
+                            <h5>¡¡¡ Ya llegan !!!</h5>
+                            <p class="SangriaIzquierda">En cada concierto elegiremos a un invitado para tararear con nosotros</p>
+                        </div>
+                    </div>
+                    <br />
+                </div>
+            </div>
+        </div>
+        <div class="table-responsive col-lg-6 text-center col-md-12 col-sm-12">
+            <div class="separador">
+                <p></p>
+                <br />
+            </div>
+            <h3 class="text-center">Aquí tienes las fechas</h3>
+            <div class="separador">
+                <hr />
+                <br />
+            </div>
+            <table class="table-hover border-secondary text-center SangriaIzquierda table-dark">
+                <thead class="justify-content-md-center">
+                    <tr class="text-center">
+                        <th style="width:150px"></th>
+                        <th scope="col">Fecha</th>
+                        <th scope="col"> </th>
+                        <th scope="col">Ciudad</th>
+                        <th scope="col"> </th>
+                        <th scope="col">Recinto</th>
+                    </tr>
+                    <tr>
+                        <th>
+                        </th>
+                        <th>
+                            <hr style="color:red" />
+                        </th>
+                        <th>
 
+                        </th>
+                        <th>
+                            <hr style="color:red" />
+                        </th>
+                        <th>
+                        </th>
+                        <th>
+                            <hr style="color:red" />
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="toDerecha">
+                        <th style="width:150px"></th>
+                        <th scope="row" class="text-center">25 marzo 2024</th>
+                        <td> </td>
+                        <td class="text-center">Badajoz</td>
+                        <td> </td>
+                        <td class="text-center">Cuclillas Center</td>
+                    </tr>
+                    <tr class="toDerecha">
+                        <th style="width:30px"></th>
+                        <th scope="row" class="text-center">17 abril 2024</th>
+                        <td> </td>
+                        <td class="text-center">Santiago de Compostela</td>
+                        <td> </td>
+                        <td class="text-center">ComposteLana de Ovejinha</td>
+                    </tr>
+                    <tr class="toDerecha">
+                        <th style="width:150px"></th>
+                        <th class="text-center">05 mayo 2025</th>
+                        <td> </td>
+                        <td class="text-center">Zaragoza</td>
+                        <td> </td>
+                        <td class="text-center">Princesa de Asturias</td>
+                    </tr>
+                    <tr>
+                        <th style="width:10px"></th>
+                        <th style="width:250px"></th>
+                        <td style="width:150px"></td>
+                        <th style="width:150px"></th>
+                        <td style="width:150px"></td>
+                        <th style="width:150px"></th>
+                        <th style="width:40px"></th>
+                    </tr>
+                </tbody>
+
+            </table>
+            <div class="separador">
+                <p></p>
+                <br />
+            </div>
+        </div>
+
+    </div>
+</section>
+<section>
+    <article class="text-center">
+        <div class="separador">
+            <p></p>
+            <br />
+        </div>
+        <h1>Compra nuestro disco</h1>
+        <h3>Y colabora con el pago de nuestras hipotecas &#128516;</h3>
+        <div class="separador">
+            <br />
+        </div>
+        <div class="d-grid gap-2 col-6 mx-auto">
+            <a href="http://localhost:5002/Discos"> <button class="btn btn-primary" type="button">Trae para acá</button></a>
+        </div>
+        <div class="separador">
+            <p>
+                <br />
+                <hr />
+            </p>
+            <br />
+        </div>
+    </article>
+</section>
+<section>
+    <article class="text-center container">
+        <h1 class="text-center">
+            ¡Nuestras jetas!
+        </h1>
+        <div class="row  text-center">
+            <div class="col-lg-3 col-md-6 col-sm-12 text-center ">
+                <img src="img/musica/guitarrista-transparente.png" alt="Guitarrista" class="imagen-redonda">
+                <h4>GuitarHero</h4>
+                <h2>Paco</h2>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 text-center">
+                <img src="img/musica/bateria-transpa-408.png" alt="Bateria" class="imagen-redonda">
+                <h4>DumBadBum</h4>
+                <h2>Luis</h2>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 text-center">
+                <img src="img/musica/cantante-luzia-408.png" alt="Cantante" class="imagen-redonda">
+                <h4>MevengoArriba</h4>
+                <h2>Luzia</h2>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 text-center">
+                <img src="img/musica/bajo-Juan-408.png" alt="Bajo" class="imagen-redonda">
+                <h4>NoTanAlto (el Bajo)</h4>
+                <h2>J1 - Juan</h2>
+            </div>
+        </div>
+    </article>
+</section>
+<section>
+    <div class="home">
+        <video muted loop autoplay>
+            <source src="/media/concierto-verde-fondo.mp4" type="video/mp4">
+        </video>
+        <div class="home-content align-items-end">
+            <h1>En vivo</h1>
+            <p>mucho mejor</p>
+        </div>
+    </div>
+</section>
+<section class="container">
+    <div class="row container align-items-md-center">
+        <div class="col-lg-6 col-md-12 col-sm-12 text-center video">
+            <video class="video" src="/media/concierto.mp4" muted controls>
+                <p>Su navegador no soporta vídeos HTML5.</p>
+            </video>
+        </div>
+        <div class="col-lg-6 col-md-12 col-sm-12 text-center align-items-md-center">
+            <h2>
+                Espectacular es el público
+            </h2>
+            <h4>Nosotros ponemos las luces y el sonido</h4>
+            <p style="color:black">Nuestra fuerza es disfrutar con nuestros fans en cada concieto</p>
+        </div>
+    </div>
+</section>
+<section class="text-center">
+    <div class="row container-fluid align-items-md-center premios altura">
+        <div class="col-lg-6 col-md-6 col-sm-12 text-center altura">
+            <div>
+                <h1>
+                    Nuestros premios
+                </h1>
+                <p>*Sin contar vuestros aplausos</p>
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 text-center altura">
+            <dl>
+                <dt>
+                    Premio música inventada 2024
+                </dt>
+                <dd>
+                    Consejo de Música de Madríd
+                </dd>
+                <br />
+                <dt>
+                    Mejor grupo 2023
+                </dt>
+                <dd>
+                    Aragón Music Awards
+                </dd>
+                <br />
+                <dt>
+                    Canción más fácil de tararear
+                </dt>
+                <dd>
+                    Aragón Music Awards 2023
+                </dd>
+                <br />
+                <dt>
+                    Mejores looks en Batamanta
+                </dt>
+                <dd>
+                    Badajoz Music Festival 2019
+                </dd>
+            </dl>
+        </div>
+    </div>
+</section>
+<section class="container ">
+    <div class="row">
+        <div class="col-lg-3 text-center">
+            <br />
+            <h2>¿Quieres estar al día de todo?</h2>
+            <br />
+            <p style="color:black">
+                Accede a todo el contenido de la web rellenando el siguiente formulario
+            </p>
+            <img src="img/musica/buscar.png" class=" grandeIMG-block" />
+        </div>
+        <div class="col-lg-6" class="caja-3d">
+            <form id="contactForm">
+                <div class="mb-3">
+                    <label for="nombre" class="form-label">
+                        Nombre completo
+                    </label>
+                    <input type="text" id="nombre" placeholder="¿Como te llamas?" class="form-control" required />
+                    <div class="valid-feedback">
+                        Un nombre poderoso!
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="fecha" class="form-label">
+                        Fecha de nacimiento
+                    </label>
+                    <input type="date" class="form-control" id="fecha" required />
+                    <div class="valid-feedback">
+                        Intentaremos acordarnos y felicitarte.
+                    </div>
+                </div>
+                <div>
+                    <label for="sexo">¿Cual es el genero con el que te sientes más identificade?</label>
+                    <select class="form-select form-control" id="sexo" aria-label="Selecciona una opción" required>
+                        <option selected disabled value="">Como te defines</option>
+                        <option value="1">Hombre</option>
+                        <option value="2">Mujer</option>
+                        <option value="3">No lo tengo claro/No te importa</option>
+                    </select>
+                    <div class="invalid-feedback">
+                        Elige una opción, para saber como tratarte.
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="direccion" class="form-label">
+                        ¿Cual es tu dirección postal? (donde vives y recoges paquetes de amazon)
+                    </label>
+                    <input type="text" id="direccion" placeholder="Paseo de los Olvidados, no recuerdo el número" required />
+                    <div class="invalid-feedback">
+                        Dinoslo para saber donde enviar las entradas del concierto.
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="correoelectronico" class="form-label">
+                        ¿Cual es tu dirección de mail? 💌
+                    </label>
+                    <input type="email" id="correoelectronico" placeholder="personamagnifica@micorreo.es" required />
+                    <div class="invalid-feedback">
+                        Pon un email válido
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required />
+                        <label class="form-check-label" for="invalidCheck2">
+                            Acepto las condiciones<br /> y cedo a mi septimo hijo
+                        </label>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <button type="submit" class="botonForm">Enviar</button>
+                </div>
+            </form>
+        </div>
+        <div class="col-lg-3 align-items-md-center altura text-center">
+            <br />
+            <h2>Entra en nuestra aplicación y ...</h2>
+            <br />
+            <p style="color:black">Entérate de todo además de conseguir descuentos,  entrar en sorteos y obtener los autografos más locos e inventados de nuestros artistas</p>
+        </div>
+    </div>
+</section>
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
     <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>

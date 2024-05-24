@@ -1,0 +1,202 @@
+﻿.fondo-gris {
+    background-color: #000000;
+    color: white;
+}
+.textoBlanco {
+    color: white;
+}
+.separador {
+    margin: 20px 0px 20px 0px;
+}
+/*.fondo-concierto {
+    background-image: url(../img/musica/microfono.jpg);
+        font-size: 24px;
+        
+    
+    transform: translate(-50%, -50%);
+}*/
+.atras {
+    background-image: url(../img/musica/microfono2-transparente.png);
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+}
+.delante{
+    z-index:1;
+}
+.contenedorConcierto {
+    position: relative;
+}
+    .contenedorConcierto h5, p, hr {
+        position: revert-layer;
+        left: 50%;
+        z-index: 1;
+        font-weight: bold;
+        color: white;
+    }
+    .contenedorConcierto img {
+        z-index: -1;
+    }
+.SangriaIzquierda {
+    padding: 0px 50px 0px 0px;
+    color: white;
+}
+.margenDerecho {
+    padding-right:8%;
+}
+.imagen-redonda {
+    margin-top: 25px;
+    border-radius: 50%;
+    background-image: linear-gradient(grey, black);
+    max-width: 40vw;
+    height: auto;
+    object-fit:cover;
+}
+.imagen-redonda:hover{
+    transform:scale(1.3,1.3);
+}
+.toDerecha{
+    text-align:right;
+}
+.video{
+    max-width:100%;
+    padding: 5px, 20px, 5px, 25px;
+    margin-bottom:10px;
+    }
+.separadorGrande {
+    margin: 20px 0px 20px 0px;
+    height: 300px;
+    padding: 100px, 0px, 100px, 0px;
+    background-image: linear-gradient(grey, white, black);
+    color: darkred;
+    text-align: center;
+    vertical-align: center;
+}
+    .separadorGrande h1 {
+        padding-top: 55px;
+    }
+    .separadorGrande p {
+        padding-top: 55px;
+        color: darkcyan;
+    }
+.premios {
+    color: white;
+    font-size: 1.5em;
+    background-image: url(/img/musica/concierto-lluvia.jpg);
+    background-repeat: no-repeat;
+    padding: 100px, 0px, 100px, 0px;
+}
+.altura {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+table{
+    padding-left:100px;
+}
+img {
+    width: 100%;
+}
+
+.contenedor-carrusel {
+    max-height: 500px; /* Ajusta este valor según la altura máxima deseada */
+    overflow: hidden;
+}
+
+.carrusel-imagenes {
+    height: auto;
+}
+
+    .carrusel-imagenes img {
+        max-width: 100%;
+        height: auto;
+    }
+.premios .row-cols-auto>* {
+    flex: 0 0 auto;
+    width: 100%;
+}
+
+.caja-3d {
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #999999;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: inset
+}
+@media (max-width: 991px) {
+    /* Ocultar en pantallas pequeñas */
+    .grandeIMG-block {
+        display: none !important;
+    }
+}
+
+@media (min-width: 992px) {
+    /* Mostrar en pantallas grandes */
+    .grandeIMG-block {
+        display: block !important;
+    }
+}
+.concierto-verde{
+    background-clip: url
+}
+/**, ::before, ::after {
+    box-sizing: border-box;
+    .home-content button {
+    display: block;
+    font-size: clamp(12px, 1.3vw, 14px);
+    border: 1px solid #f1f1f1;
+    border-radius: 5px;
+    background: transparent;
+    color: #fff;
+    margin: 5px auto 0;
+    padding: 12px 20px;
+    cursor: pointer;
+}*/
+.home {
+    height: 40vh;
+    position: relative;
+    margin-bottom:10px;
+}
+
+.home video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.home-content {
+    position: relative;
+    padding-top: 100px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 0 1em blue;
+}
+
+.home h1 {
+    font-family: Playfair Display, serif;
+    font-size: clamp(45px, 7vw, 130px);
+    line-height: 1.1;
+}
+
+.home p {
+    font-size: clamp(25px, 4vw, 40px);
+    margin-top: 10px;
+}
+
+.home-content button {
+    display: block;
+    font-size: clamp(14px, 1.5vw, 18px);
+    border: 1px solid #f1f1f1;
+    border-radius: 5px;
+    background: transparent;
+    color: #fff;
+    margin: 50px auto 0;
+    padding: 12px 20px;
+    cursor: pointer;
+}
+.protest-revolution-regular {
+    font-family: "Protest Revolution", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
